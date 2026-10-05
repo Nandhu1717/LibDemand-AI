@@ -1,0 +1,501 @@
+Category,Month,Semester,Students,Borrowing,Previous_Demand,Demand
+Engineering,4,5,320,126,101,102
+Physics,7,3,508,107,129,138
+Computer Science,8,3,711,72,287,187
+Literature,12,5,210,223,51,137
+Medical,12,1,610,238,88,152
+Mathematics,3,4,616,83,160,143
+Medical,3,7,70,92,196,91
+Literature,5,2,389,111,293,190
+Engineering,3,6,130,183,79,102
+Business,6,2,821,73,220,189
+Literature,10,4,211,221,299,185
+Business,7,4,751,59,242,197
+Computer Science,2,7,102,43,246,138
+History,1,1,888,28,158,97
+Mathematics,8,8,112,158,110,155
+Physics,5,2,280,60,57,84
+Engineering,9,8,829,181,62,184
+Computer Science,5,3,733,123,243,181
+Physics,3,1,788,120,160,165
+Engineering,7,3,442,226,44,173
+Literature,10,4,510,198,92,156
+Medical,4,6,534,170,260,229
+Medical,11,5,85,32,189,132
+Mathematics,2,2,606,81,163,152
+Mathematics,12,4,605,103,157,137
+History,11,6,682,135,262,203
+Physics,7,6,505,174,166,220
+Literature,12,8,876,137,189,211
+Computer Science,8,1,741,132,81,151
+Physics,1,5,674,203,110,161
+Physics,1,2,691,239,83,172
+History,3,6,179,72,201,124
+Literature,6,8,296,87,232,137
+Business,8,5,933,117,227,195
+Business,11,7,801,163,126,194
+Computer Science,3,4,813,206,176,185
+Mathematics,7,4,538,180,157,198
+Physics,12,1,522,197,180,171
+Engineering,10,3,312,163,141,166
+Literature,1,8,303,159,66,190
+Computer Science,11,7,58,118,176,144
+Computer Science,6,8,722,171,145,207
+Physics,1,8,469,185,133,188
+Medical,2,8,927,101,223,202
+Business,3,8,730,247,190,241
+Computer Science,4,8,945,155,164,211
+Physics,1,8,82,195,51,147
+Physics,11,2,326,49,126,86
+Mathematics,1,5,878,67,176,201
+Computer Science,1,4,269,177,75,133
+Medical,6,3,941,56,210,179
+Mathematics,5,8,210,86,157,135
+Literature,9,2,784,73,87,137
+Engineering,2,7,204,149,133,121
+History,9,3,295,195,68,145
+Physics,2,1,457,32,65,60
+Medical,4,1,825,163,171,173
+Mathematics,2,2,849,234,80,198
+History,10,7,239,144,179,149
+Mathematics,10,6,832,73,130,162
+History,8,5,621,127,34,153
+Computer Science,4,6,96,118,173,127
+Medical,2,4,155,177,176,133
+Mathematics,10,7,395,248,146,214
+Business,7,7,442,159,158,166
+Literature,6,8,650,136,218,198
+Engineering,5,6,910,214,105,185
+Business,9,5,269,88,76,104
+History,4,5,253,163,247,190
+Mathematics,1,6,783,120,52,162
+Literature,10,6,886,119,209,234
+Literature,1,8,374,23,45,62
+Computer Science,7,2,546,239,189,196
+Literature,3,4,594,180,208,206
+Physics,5,4,884,84,197,169
+Computer Science,10,2,651,181,144,172
+History,7,4,875,133,104,174
+Medical,9,4,443,120,221,175
+Physics,1,3,597,229,125,191
+Medical,12,1,744,32,246,145
+Physics,9,6,322,132,91,80
+Medical,11,3,226,119,262,151
+Physics,12,1,504,47,235,128
+Literature,5,5,148,159,54,149
+Mathematics,11,5,533,72,180,139
+Medical,10,2,984,161,252,225
+Literature,5,3,264,240,264,217
+History,6,7,223,160,197,177
+Literature,9,2,844,141,223,216
+Engineering,7,1,350,151,99,106
+Mathematics,3,5,925,201,196,245
+Engineering,3,5,702,239,155,208
+Literature,4,4,505,80,30,75
+History,12,1,458,75,146,126
+Business,10,4,734,179,202,206
+Medical,4,3,708,39,76,108
+History,1,6,192,178,30,140
+Computer Science,7,1,61,93,253,154
+Computer Science,8,6,457,175,37,148
+Computer Science,10,4,227,47,249,108
+Medical,9,4,753,174,174,180
+Medical,12,8,974,160,75,164
+Physics,6,2,932,216,39,195
+Computer Science,1,3,902,45,92,121
+History,6,3,844,196,127,196
+Medical,6,3,486,42,82,131
+Medical,10,2,132,164,114,90
+Physics,4,6,498,132,63,132
+Mathematics,8,7,203,181,147,148
+History,6,4,438,241,251,232
+Physics,9,1,673,66,236,164
+Physics,3,7,471,211,281,255
+Literature,6,2,147,101,278,170
+Mathematics,7,2,612,100,162,144
+Medical,4,2,233,164,98,115
+Medical,11,3,801,222,140,206
+History,7,7,897,114,37,168
+History,3,8,244,174,122,138
+Computer Science,2,5,683,70,34,88
+Business,5,6,562,152,262,180
+Mathematics,10,6,595,196,107,153
+Literature,9,7,170,233,268,187
+Computer Science,11,7,97,80,55,90
+Engineering,8,6,575,237,57,176
+Engineering,8,2,414,173,43,133
+Physics,12,5,323,57,256,157
+Physics,9,7,534,47,231,187
+Business,10,6,861,44,174,170
+Medical,4,1,629,157,96,133
+Mathematics,6,2,672,27,265,196
+Physics,10,1,662,25,209,147
+Computer Science,11,5,790,140,179,229
+Medical,6,6,552,131,33,145
+Engineering,6,6,930,113,91,174
+History,2,7,764,155,55,185
+Business,10,6,885,38,241,171
+History,4,1,189,66,30,21
+Medical,11,7,917,96,288,244
+History,6,2,59,24,167,61
+Medical,9,1,826,222,67,184
+Engineering,3,6,144,68,98,102
+History,2,4,596,20,89,89
+Computer Science,8,3,922,248,299,275
+Medical,5,3,428,97,91,119
+Mathematics,9,5,91,108,133,96
+Business,1,7,624,162,182,151
+History,1,7,552,213,133,198
+Business,6,3,440,198,71,110
+Computer Science,4,7,672,176,260,244
+Physics,7,1,303,215,115,159
+Literature,10,5,684,93,147,182
+Medical,4,4,734,149,124,159
+Physics,3,4,341,45,98,68
+Engineering,10,6,412,159,247,179
+Medical,8,6,259,236,140,188
+Mathematics,4,8,373,152,156,201
+Literature,1,4,848,141,80,164
+Business,11,7,818,65,130,164
+Medical,10,6,469,201,30,147
+Computer Science,5,7,358,156,231,209
+Mathematics,9,5,715,188,92,196
+Business,2,7,259,238,46,147
+Computer Science,11,3,925,198,211,221
+Business,5,8,210,196,92,126
+Physics,6,2,205,133,78,90
+Mathematics,8,1,376,20,253,95
+Medical,7,3,940,203,240,224
+History,8,3,67,20,107,16
+Physics,2,2,551,239,142,205
+Engineering,4,1,313,176,84,75
+Engineering,3,8,827,221,191,233
+Mathematics,2,7,398,27,276,157
+Physics,8,7,492,91,83,147
+Physics,1,4,313,181,125,108
+Computer Science,8,6,540,163,194,182
+Engineering,2,7,379,26,190,110
+Engineering,5,3,673,144,65,166
+History,5,4,572,149,224,204
+Engineering,7,4,581,24,285,118
+Mathematics,3,4,555,105,110,168
+Literature,8,3,776,147,253,197
+Business,9,8,286,44,230,146
+Business,6,3,543,23,183,95
+Engineering,5,3,887,165,157,192
+Medical,10,4,90,185,63,150
+Literature,12,7,678,125,56,164
+History,6,3,217,117,297,160
+Literature,1,2,525,209,151,216
+Business,2,4,871,126,222,204
+Literature,5,3,345,30,193,95
+History,11,7,793,246,127,233
+Business,5,8,338,55,268,164
+Mathematics,3,3,293,100,230,135
+History,8,1,690,236,90,174
+Physics,8,2,74,58,160,78
+Physics,11,1,66,93,86,55
+Engineering,1,7,61,81,109,108
+Medical,1,7,534,137,227,205
+Computer Science,9,2,138,31,172,77
+Literature,10,8,760,164,115,195
+Literature,7,6,384,136,36,128
+Literature,11,7,526,101,252,183
+Business,4,7,451,206,132,184
+Physics,12,4,862,117,160,168
+Medical,11,8,232,234,68,169
+Medical,6,1,446,229,190,139
+Computer Science,10,4,943,213,256,248
+Computer Science,3,3,88,65,58,83
+Business,1,5,367,204,265,171
+Medical,1,6,738,22,171,112
+Computer Science,2,4,195,209,182,172
+Engineering,9,7,866,140,169,198
+Physics,10,5,110,248,227,205
+Literature,9,7,613,23,88,122
+Computer Science,4,5,624,73,272,150
+Literature,9,2,986,22,291,185
+Medical,5,6,96,234,206,231
+History,11,2,468,197,91,153
+History,8,3,209,246,298,211
+History,4,6,406,117,296,161
+History,8,3,684,239,58,176
+Computer Science,9,5,444,206,255,215
+Computer Science,12,7,87,91,280,157
+Business,5,4,737,224,110,226
+Literature,8,5,273,81,144,108
+Literature,8,3,798,52,291,205
+Computer Science,3,8,217,111,88,130
+Physics,9,5,219,119,220,164
+Physics,6,4,56,152,264,156
+Engineering,7,2,443,179,187,175
+Engineering,2,4,307,225,106,150
+Computer Science,11,1,282,36,252,115
+Literature,12,8,905,128,192,206
+Engineering,10,1,273,245,89,125
+Engineering,5,5,327,215,271,222
+Business,1,6,523,139,239,211
+Literature,12,4,812,246,36,204
+Physics,10,7,587,245,255,235
+Medical,4,1,148,160,68,119
+Physics,4,8,179,194,113,158
+Business,11,3,756,100,265,153
+Literature,12,6,576,181,192,185
+Computer Science,1,1,841,31,237,129
+History,1,5,358,27,108,98
+Physics,2,4,248,150,210,152
+Business,7,1,943,103,257,166
+History,6,8,880,233,146,206
+Computer Science,1,8,838,37,124,196
+Business,11,5,778,52,131,149
+Physics,8,1,450,95,75,106
+Computer Science,6,6,141,167,190,152
+Mathematics,1,2,274,52,262,129
+Medical,1,5,165,173,132,142
+Business,10,2,192,245,135,130
+Engineering,12,1,921,222,152,203
+Literature,12,8,889,197,113,201
+Business,11,7,56,222,113,194
+Business,10,7,564,146,217,219
+Literature,11,2,61,106,41,43
+Engineering,5,7,337,70,111,109
+Business,2,3,711,56,88,95
+Physics,6,7,256,116,242,179
+Engineering,10,5,73,167,33,116
+Mathematics,8,2,738,198,125,191
+History,4,2,166,117,257,108
+Physics,10,6,686,31,160,132
+Medical,2,8,70,162,254,186
+Computer Science,7,2,989,33,31,96
+Engineering,5,5,983,60,140,197
+Mathematics,2,7,887,164,57,216
+Literature,3,5,310,212,193,180
+Physics,10,3,679,33,109,123
+Literature,10,4,911,124,286,265
+Mathematics,1,1,625,137,150,122
+Physics,5,7,253,184,149,171
+Engineering,6,4,300,208,159,190
+History,5,4,331,48,30,69
+Medical,11,5,210,198,235,160
+Mathematics,10,4,742,235,280,263
+Engineering,8,7,476,197,180,202
+Computer Science,4,8,995,143,37,168
+Medical,6,7,851,212,148,259
+Literature,11,2,463,133,174,149
+History,12,3,889,108,30,136
+Physics,5,8,118,124,119,108
+Computer Science,6,7,634,180,198,199
+History,9,5,638,178,127,142
+Business,3,6,531,101,158,136
+Computer Science,6,7,650,232,172,246
+Engineering,5,3,877,112,253,231
+History,3,4,151,237,296,236
+Literature,2,6,826,22,114,158
+Literature,8,8,499,217,146,201
+Engineering,12,4,832,62,50,99
+Engineering,11,7,385,66,146,127
+Physics,3,7,373,40,170,137
+Business,3,2,383,144,81,125
+Mathematics,3,8,193,125,187,159
+Literature,2,1,638,151,119,141
+Engineering,12,2,88,160,188,126
+Engineering,8,1,987,208,65,159
+Business,1,4,425,192,76,140
+Physics,7,6,167,40,243,156
+Engineering,10,8,427,140,154,177
+Literature,8,8,769,68,183,163
+Computer Science,3,4,109,186,231,141
+History,2,3,725,221,271,222
+Mathematics,2,1,680,168,179,160
+Computer Science,5,7,468,239,189,186
+Medical,9,6,970,21,292,217
+Medical,2,3,603,137,154,176
+Engineering,8,4,351,38,97,112
+Literature,6,2,337,186,138,121
+History,7,4,830,68,159,143
+Mathematics,5,4,588,179,178,195
+Physics,6,4,430,77,288,136
+Business,6,2,776,191,287,186
+Business,12,2,597,216,237,191
+Literature,9,7,961,31,174,128
+Engineering,12,3,153,137,34,75
+Mathematics,8,8,413,84,150,134
+Business,2,8,792,51,190,183
+Medical,12,6,549,245,171,205
+Medical,2,1,390,21,278,118
+History,1,3,884,199,219,264
+Engineering,6,3,455,190,172,146
+Business,12,5,293,31,268,157
+Medical,3,6,265,177,163,116
+Physics,7,4,575,92,192,166
+Literature,4,2,817,29,54,83
+Literature,9,5,871,52,193,150
+Computer Science,6,6,430,199,54,156
+Medical,5,2,441,168,54,118
+Mathematics,12,5,592,97,49,119
+Literature,12,7,439,179,72,184
+Physics,3,5,516,181,295,242
+History,2,6,828,197,282,219
+Engineering,3,1,148,168,185,148
+Business,3,7,129,163,281,217
+Computer Science,1,5,408,143,250,209
+Mathematics,4,4,471,197,92,145
+Computer Science,3,7,204,111,43,129
+Engineering,5,5,647,152,212,182
+Business,6,7,710,157,94,123
+Medical,5,2,291,232,210,157
+Mathematics,11,7,966,71,285,222
+Engineering,5,2,559,215,63,172
+Computer Science,3,1,782,199,71,141
+Medical,10,5,674,124,221,175
+History,2,4,609,48,126,144
+Literature,2,2,281,40,232,67
+Business,8,1,128,164,202,131
+Physics,5,8,989,212,116,223
+History,7,3,434,128,181,150
+History,5,4,326,77,257,174
+Engineering,3,4,612,205,290,214
+Medical,6,8,569,83,167,176
+Literature,2,3,610,55,107,141
+History,9,1,427,138,219,146
+Mathematics,12,3,537,21,298,168
+Medical,12,2,572,29,212,124
+Business,12,2,675,41,242,135
+Mathematics,3,6,162,139,151,142
+History,12,1,992,37,178,156
+Medical,5,6,953,65,267,222
+Physics,6,6,284,108,51,129
+Mathematics,2,2,590,232,79,162
+Computer Science,12,5,327,190,218,153
+History,8,3,752,137,48,157
+Medical,8,2,235,163,101,120
+History,12,5,564,212,133,189
+Literature,11,1,59,168,260,142
+Physics,11,2,986,131,42,180
+Literature,10,2,615,31,238,193
+Business,9,2,486,140,49,94
+Engineering,6,8,260,120,215,158
+Mathematics,4,4,955,43,256,196
+Business,8,7,454,221,67,151
+Business,4,4,106,192,49,129
+Medical,3,8,790,99,215,197
+Engineering,4,4,937,43,191,199
+Mathematics,12,3,866,82,240,216
+Business,8,5,125,49,146,97
+Computer Science,4,6,232,132,212,187
+History,2,7,677,132,280,231
+History,12,6,862,180,227,244
+Mathematics,4,8,96,238,227,205
+Literature,2,3,668,132,283,172
+Business,6,1,926,70,274,174
+Computer Science,5,4,98,168,103,91
+Computer Science,5,4,631,109,289,197
+Mathematics,6,1,231,193,217,159
+History,4,8,597,232,135,189
+Physics,7,4,319,139,211,139
+Engineering,10,1,254,89,73,81
+Physics,4,2,299,126,50,89
+Mathematics,2,1,568,89,156,144
+Physics,4,8,704,195,228,215
+Medical,10,2,541,139,171,169
+Literature,5,8,354,166,190,158
+Literature,5,4,944,90,115,181
+Medical,2,4,92,188,115,180
+History,1,2,543,217,127,142
+Literature,6,8,106,85,127,115
+Computer Science,3,5,728,105,105,151
+Mathematics,11,2,660,211,272,203
+Engineering,1,8,81,154,49,146
+Mathematics,6,7,425,232,108,188
+Business,4,4,831,174,197,224
+History,10,4,276,25,196,108
+Mathematics,7,1,428,197,226,139
+Mathematics,9,4,534,104,101,133
+Engineering,9,7,960,195,267,235
+Mathematics,6,4,435,26,288,152
+Physics,2,3,89,249,249,173
+Medical,12,8,668,120,289,211
+Business,6,6,807,38,61,132
+Engineering,1,7,158,138,50,100
+Business,2,4,973,121,252,198
+Medical,9,3,402,215,183,184
+Business,5,3,750,239,294,250
+Physics,12,4,426,158,242,208
+Computer Science,2,6,180,95,185,121
+History,3,7,387,77,104,115
+History,7,8,945,169,137,223
+Physics,1,4,942,35,95,135
+Physics,8,8,205,66,230,165
+Engineering,6,7,240,40,256,137
+History,5,5,351,161,68,135
+Business,11,3,456,206,120,174
+Literature,8,6,599,161,129,153
+Physics,11,4,930,44,299,193
+Literature,6,7,711,195,112,210
+Medical,7,6,112,92,280,165
+Mathematics,7,1,557,38,149,114
+Computer Science,1,6,314,83,190,177
+Computer Science,4,1,703,222,256,230
+History,4,3,117,239,293,178
+Literature,9,5,671,105,149,174
+Business,12,3,828,83,79,121
+Medical,5,5,353,39,201,132
+History,2,8,529,84,37,135
+Medical,7,7,473,95,105,115
+Physics,10,4,654,169,261,207
+Medical,3,6,837,176,208,222
+Mathematics,4,6,125,192,96,103
+Business,12,2,211,110,286,138
+Business,9,2,962,80,297,173
+Business,10,3,697,230,122,233
+Business,3,8,798,103,206,191
+Medical,6,1,351,132,219,150
+History,10,7,390,196,221,206
+Business,10,3,871,145,262,198
+History,1,8,838,70,88,154
+Engineering,7,1,600,160,221,167
+History,8,4,68,95,101,75
+Computer Science,5,5,317,208,269,224
+Mathematics,10,5,569,172,203,172
+Engineering,7,1,736,103,175,147
+Engineering,4,2,534,166,268,173
+Mathematics,8,4,162,244,272,210
+Engineering,9,2,499,70,295,159
+Business,2,3,167,220,68,133
+Physics,5,2,654,185,287,225
+History,9,6,317,182,264,251
+Literature,5,5,623,68,156,135
+Engineering,9,7,457,57,136,169
+Engineering,9,5,683,49,217,146
+Mathematics,2,8,500,214,185,240
+Engineering,8,3,609,179,147,179
+Mathematics,12,1,969,186,185,181
+Computer Science,1,1,608,167,186,163
+Literature,12,2,468,190,155,143
+Computer Science,5,8,979,195,145,234
+Computer Science,12,6,882,50,142,159
+Computer Science,8,3,628,94,74,97
+Mathematics,10,3,479,126,263,144
+Medical,5,6,987,248,151,223
+Medical,5,2,173,120,64,89
+Mathematics,9,1,846,96,88,150
+Engineering,4,1,158,243,97,131
+Medical,2,5,903,72,71,151
+Literature,3,2,546,104,50,106
+Physics,1,4,329,144,140,148
+Literature,11,4,484,36,128,115
+History,8,2,836,184,37,170
+Mathematics,5,1,662,183,176,179
+Literature,11,6,734,66,169,142
+Business,5,6,444,239,34,146
+Business,10,4,631,36,176,153
+Literature,12,4,869,115,99,124
+Business,11,1,265,170,232,180
+Computer Science,9,3,803,228,208,219
+Mathematics,3,7,800,23,192,183
+Computer Science,9,8,165,192,254,193
+Medical,7,8,163,243,51,173
+Medical,6,3,884,73,155,179
+History,8,3,745,49,86,127
+Business,3,3,419,27,142,98
+Medical,1,7,598,160,261,210

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibDemand AI - AI-Based Library Book Demand Prediction System</title>
+    <meta name="description" content="Predict future library book demand using historical borrowing records & Random Forest Machine Learning">
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- HEADER BANNER -->
+        <header class="glass-card header-banner">
+            <div>
+                <h1 class="brand-title">📚 <span>LibDemand AI</span></h1>
+                <p class="brand-subtitle">AI-Based Library Book Demand Prediction System & Inventory Optimization Engine</p>
+            </div>
+            <div class="status-pill">
+                <span class="status-dot"></span>
+                <span>Random Forest Engine Active</span>
+            </div>
+        </header>
+
+        <!-- NAVIGATION TABS -->
+        <nav class="nav-tabs">
+            <button class="tab-btn active" onclick="switchTab('tab-predict')">🔮 Real-Time Predictor</button>
+            <button class="tab-btn" onclick="switchTab('tab-analytics')">📊 Analytics Dashboard</button>
+            <button class="tab-btn" onclick="switchTab('tab-data')">📥 Data Explorer</button>
+            <button class="tab-btn" onclick="switchTab('tab-model')">🤖 Model Diagnostics</button>
+            <button class="tab-btn" onclick="switchTab('tab-guide')">📖 User Guide</button>
+        </nav>
+
+        <!-- TAB 1: REAL-TIME DEMAND PREDICTOR -->
+        <section id="tab-predict" class="tab-content active">
+            <div class="grid-2">
+                <!-- Input Form -->
+                <div class="glass-card">
+                    <h2 class="section-title">🎛️ Single Book Circulation Parameters</h2>
+                    <form id="prediction-form" onsubmit="calculatePrediction(event)">
+                        <div class="form-group">
+                            <label class="form-label" for="category-select">📖 Book Subject Category</label>
+                            <select id="category-select" class="form-control">
+                                <option value="Computer Science">Computer Science</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="Medical">Medical</option>
+                                <option value="Business">Business</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Literature">Literature</option>
+                                <option value="History">History</option>
+                            </select>
+                        </div>
+
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label class="form-label" for="month-select">📅 Month of Academic Year</label>
+                                <select id="month-select" class="form-control">
+                                    <option value="1">Jan (Month 1)</option>
+                                    <option value="2">Feb (Month 2)</option>
+                                    <option value="3">Mar (Month 3)</option>
+                                    <option value="4">Apr (Month 4)</option>
+                                    <option value="5" selected>May (Month 5 - Exams)</option>
+                                    <option value="6">Jun (Month 6)</option>
+                                    <option value="7">Jul (Month 7)</option>
+                                    <option value="8">Aug (Month 8)</option>
+                                    <option value="9">Sep (Month 9)</option>
+                                    <option value="10">Oct (Month 10)</option>
+                                    <option value="11">Nov (Month 11)</option>
+                                    <option value="12">Dec (Month 12 - Exams)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="semester-input">🎓 Semester (1 to 8)</label>
+                                <input type="number" id="semester-input" class="form-control" min="1" max="8" value="4">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="students-input">👥 Enrolled Students Headcount</label>
+                            <input type="number" id="students-input" class="form-control" min="10" max="2000" value="320" step="10">
+                        </div>
+
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label class="form-label" for="borrowing-input">📕 Past Borrowings Count</label>
+                                <input type="number" id="borrowing-input" class="form-control" min="0" max="1000" value="140">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="prev-demand-input">📊 Past Demand Score</label>
+                                <input type="number" id="prev-demand-input" class="form-control" min="0" max="1000" value="155">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary">🔮 Calculate Predicted Demand</button>
+                    </form>
+                </div>
+
+                <!-- Prediction Results Display -->
+                <div>
+                    <div class="glass-card">
+                        <h2 class="section-title">📈 Predicted Demand Results</h2>
+                        <div class="grid-2" style="margin-bottom: 1.25rem;">
+                            <div class="metric-card blue">
+                                <div class="metric-label">Predicted Demand</div>
+                                <div class="metric-val" id="res-demand-val">185</div>
+                                <div class="metric-sub">Estimated copies needed</div>
+                            </div>
+                            <div class="metric-card amber">
+                                <div class="metric-label">Demand Level</div>
+                                <div style="margin-top: 0.4rem;">
+                                    <span id="res-badge" class="badge badge-high">High Demand</span>
+                                </div>
+                                <div class="metric-sub" id="res-threshold-text">Above 66th percentile (> 160)</div>
+                            </div>
+                        </div>
+
+                        <div id="rec-box-container" class="rec-box high">
+                            <div id="rec-title" class="rec-title">🚨 HIGH DEMAND PRIORITY - Reorder & Restock</div>
+                            <div id="rec-detail" class="rec-detail">
+                                High demand anticipated! Increase available physical shelf copies, place priority reorders with suppliers, and reserve short-term borrowing reserves.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Batch Predictor Card -->
+                    <div class="glass-card">
+                        <h3 class="section-title">📂 Batch Dataset Prediction</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Run LibDemand AI across all sample inventory records simultaneously.</p>
+                        <button class="btn-secondary" onclick="runBatchPrediction()">⚡ Run Batch Prediction & Download CSV Report</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: ANALYTICS DASHBOARD -->
+        <section id="tab-analytics" class="tab-content">
+            <div class="grid-4" style="margin-bottom: 1.5rem;">
+                <div class="metric-card blue">
+                    <div class="metric-label">Total Sample Records</div>
+                    <div class="metric-val">600</div>
+                    <div class="metric-sub">Circulation records</div>
+                </div>
+                <div class="metric-card emerald">
+                    <div class="metric-label">Avg Borrowing Demand</div>
+                    <div class="metric-val">124.5</div>
+                    <div class="metric-sub">Books per category</div>
+                </div>
+                <div class="metric-card amber">
+                    <div class="metric-label">Exam Peak Month</div>
+                    <div class="metric-val">May / Dec</div>
+                    <div class="metric-sub">+30% borrowing spike</div>
+                </div>
+                <div class="metric-card indigo">
+                    <div class="metric-label">Top Demand Category</div>
+                    <div class="metric-val" style="font-size: 1.5rem;">Computer Sci.</div>
+                    <div class="metric-sub">Weight multiplier 1.35x</div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="glass-card">
+                    <h3 class="section-title">📈 Monthly Demand Trend (Academic Seasonality)</h3>
+                    <div class="chart-container">
+                        <canvas id="monthlyChart"></canvas>
+                    </div>
+                </div>
+                <div class="glass-card">
+                    <h3 class="section-title">📚 Average Demand by Book Category</h3>
+                    <div class="chart-container">
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="glass-card">
+                    <h3 class="section-title">🍩 Demand Level Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="donutChart"></canvas>
+                    </div>
+                </div>
+                <div class="glass-card">
+                    <h3 class="section-title">🎯 Model Feature Importances</h3>
+                    <div class="chart-container">
+                        <canvas id="importanceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: DATA EXPLORER -->
+        <section id="tab-data" class="tab-content">
+            <div class="glass-card">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h2 class="section-title" style="margin-bottom: 0;">📋 Circulation Dataset Explorer</h2>
+                    <input type="text" id="table-search" class="form-control" style="width: 250px;" placeholder="Search dataset..." onkeyup="filterTable()">
+                </div>
+
+                <div class="table-container">
+                    <table id="data-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Category</th>
+                                <th>Month</th>
+                                <th>Semester</th>
+                                <th>Enrolled Students</th>
+                                <th>Past Borrowings</th>
+                                <th>Past Demand</th>
+                                <th>Target Demand</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- Populated via app.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: MODEL DIAGNOSTICS -->
+        <section id="tab-model" class="tab-content">
+            <div class="grid-3" style="margin-bottom: 1.5rem;">
+                <div class="metric-card blue">
+                    <div class="metric-label">Mean Absolute Error (MAE)</div>
+                    <div class="metric-val">±18.48</div>
+                    <div class="metric-sub">Average deviation in books</div>
+                </div>
+                <div class="metric-card amber">
+                    <div class="metric-label">Root Mean Squared Error (RMSE)</div>
+                    <div class="metric-val">23.40</div>
+                    <div class="metric-sub">Penalizes large error outliers</div>
+                </div>
+                <div class="metric-card emerald">
+                    <div class="metric-label">R² Accuracy Score</div>
+                    <div class="metric-val">0.7115</div>
+                    <div class="metric-sub">Variance explained (71.2%)</div>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <h3 class="section-title">⚙️ Machine Learning Architecture Details</h3>
+                <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+                    LibDemand AI utilizes a <strong>Random Forest Regression</strong> ensemble model consisting of 120 decision trees. Features are preprocessed using Scikit-Learn ColumnTransformer and OneHotEncoder to prevent data leakage during scaling and encoding.
+                </p>
+                <div class="grid-2">
+                    <div style="background: rgba(15, 23, 42, 0.6); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--glass-border);">
+                        <strong style="color: var(--accent-blue);">Algorithm:</strong> Random Forest Regressor<br>
+                        <strong style="color: var(--accent-blue);">Tree Estimators:</strong> 120 Trees<br>
+                        <strong style="color: var(--accent-blue);">Train/Test Split:</strong> 80% Train (480 rows) / 20% Test (120 rows)
+                    </div>
+                    <div style="background: rgba(15, 23, 42, 0.6); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--glass-border);">
+                        <strong style="color: var(--accent-emerald);">Threshold Classification:</strong> Percentile Quantiles<br>
+                        <strong style="color: var(--accent-emerald);">Low Demand:</strong> &lt; 85 books (&lt; 33rd quantile)<br>
+                        <strong style="color: var(--accent-emerald);">High Demand:</strong> &gt; 160 books (&gt; 66th quantile)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: LIBRARIAN USER GUIDE -->
+        <section id="tab-guide" class="tab-content">
+            <div class="glass-card">
+                <h2 class="section-title">📖 LibDemand AI User Guide & System Overview</h2>
+                <div style="color: var(--text-muted); line-height: 1.8;">
+                    <h3 style="color: #FFFFFF; margin: 1rem 0 0.5rem 0;">📌 Problem Statement & Solution</h3>
+                    <p>
+                        Libraries need to keep enough copies of popular books available while avoiding the accumulation of resources that few students borrow. Manual stock planning relies on retrospective records. <strong>LibDemand AI</strong> solves this by analyzing historical circulation indicators (book category, month, semester, student headcount, past borrowings, and past demand) using Random Forest Machine Learning to accurately forecast future book demand.
+                    </p>
+
+                    <h3 style="color: #FFFFFF; margin: 1.5rem 0 0.5rem 0;">🏷️ Demand Classification Rules</h3>
+                    <ul style="margin-left: 1.5rem;">
+                        <li><strong style="color: #6EE7B7;">Low Demand (&lt; 85 books):</strong> Retain existing shelf stock; avoid ordering unnecessary duplicate copies.</li>
+                        <li><strong style="color: #FDE68A;">Medium Demand (85 – 160 books):</strong> Monitor circulation frequency; ensure reference desk reserve is populated.</li>
+                        <li><strong style="color: #FCA5A5;">High Demand (&gt; 160 books):</strong> 🚨 <strong>Priority Reorder</strong> with suppliers; activate short-term borrowing reserves and digital copy access.</li>
+                    </ul>
+
+                    <h3 style="color: #FFFFFF; margin: 1.5rem 0 0.5rem 0;">🔮 Future Roadmap</h3>
+                    <p>
+                        Upcoming enhancements include individual ISBN book-level predictions, real-time ILS API connectors (Koha/Alma), and automated email reorder alerts.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            LibDemand AI • AI-Based Library Book Demand Prediction System • Single Page Web Application
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
